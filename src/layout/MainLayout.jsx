@@ -15,7 +15,7 @@ import Header from '../components/Header';
 function MainLayout({ children }) {
   return (
     <div>
-      <Header/>
+      <Header />
       <header className='header'>
         <div className="container header__container">
           <div className="header-logo">
