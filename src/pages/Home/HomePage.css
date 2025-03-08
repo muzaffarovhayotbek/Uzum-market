@@ -5,5 +5,15 @@
 
 .homePage h2 {
   font-size: 28px;
-  font-weight: bold;
+  font-weight: 500;
+}
+
+li {
+  list-style: none;
+}
+
+
+
+.product-image {
+  width: 232px;
 }
