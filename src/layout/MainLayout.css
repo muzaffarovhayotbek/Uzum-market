@@ -18,9 +18,16 @@
 }
 
 .header-logo {
-  font-size: 24px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
   color: #7e818c;
   font-family: 500;
+}
+
+.header-logo a {
+  font-size: 28px;
+  color: #1f2026;
 }
 
 .catalog {
@@ -171,4 +178,5 @@
   font-size: 11px;
   font-family: 'Roboto';
   color: #7e818c;
+  margin: 0 0 518px;
 }

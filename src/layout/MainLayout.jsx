@@ -8,15 +8,19 @@ import instagram from '../assets/instagram.svg'
 import telegram from '../assets/telegram.svg'
 import facebook from '../assets/facebook.svg'
 import YouTubde from '../assets/YouTube.svg'
+import logo from '../assets/big-logo.webp'
 import './MainLayout.css'
 import { NavLink } from 'react-router-dom';
+import Header from '../components/Header';
 function MainLayout({ children }) {
   return (
     <div>
+      <Header/>
       <header className='header'>
         <div className="container header__container">
           <div className="header-logo">
-            <h1>It uzum</h1>
+            <img src={logo} alt="logo" width={31} />
+            <NavLink to='/'>It uzum</NavLink>
           </div>
           <div className="header-search">
             <div className="catalog">

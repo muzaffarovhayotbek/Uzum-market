@@ -1,0 +1,48 @@
+.components-header {
+  padding-top: 6px;
+  padding-bottom: 8px;
+  background-color: #F0F2F5;
+}
+
+.header-main {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.header-main a {
+  color: #1F2026;
+  font-size: 14px;
+  font-family: 'Inter';
+  margin: 0 0 0 24px;
+  font-weight: 400;
+
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.header-right a {
+  color: #7F4DFF;
+  font-size: 14px;
+  font-family: 'Inter';
+  font-weight: 400;
+
+}
+
+.header-right .savol {
+  color: #4D4F59;
+  font-size: 14px;
+  font-family: 'Inter';
+  font-weight: 400;
+}
+
+.header-right .buyurtma {
+  color: #4D4F59;
+  font-size: 14px;
+  font-family: 'Inter';
+  font-weight: 400;
+}
