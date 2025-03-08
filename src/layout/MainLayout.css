@@ -1,0 +1,174 @@
+.header {
+  margin-top: 18px;
+  margin-bottom: 10px;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-search {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  background-color: #FFFFFF;
+  padding: 0px 110.45px 0px 16px;
+}
+
+.header-logo {
+  font-size: 24px;
+  color: #7e818c;
+  font-family: 500;
+}
+
+.catalog {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 12px;
+  background-color: #E5E5FF;
+  font-size: 14px;
+  font-family: 'Inter';
+  margin: 0 4px;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+
+}
+
+.form input {
+  padding-top: 10.6px;
+  padding-left: 16.62px;
+  padding-bottom: 12.4px;
+  padding-right: 187px;
+  border-radius: 4px;
+  border: none;
+}
+
+.slot {
+  width: 79px;
+  padding-top: 4px;
+  padding-left: 16px;
+  padding-bottom: 4px;
+  padding-right: 16px;
+  background-color: #EDEFF2;
+  border-radius: 4px;
+
+}
+
+.header-buttons {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.header-buttons a {
+  font-size: 14px;
+  color: #1f2026;
+  font-weight: 500;
+}
+
+.like {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.like img {
+  cursor: pointer;
+}
+
+.savat {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer__container {
+  display: flex;
+  gap: 222px;
+}
+
+.footer-you {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer-list li {
+  font-size: 12px;
+  color: #8b8e99;
+}
+
+.footer-main {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer-tab {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer-app h2 {
+  font-size: 14px;
+  color: #1f2026;
+  font-family: 'Roboto';
+}
+
+.footer-smm {
+  padding-top: 32px;
+  margin-bottom: 40px;
+}
+
+.footer-smm h2 {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  color: #1f2026;
+  width: 400px;
+}
+
+.icons {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-bottom: 2px;
+}
+
+.icons img {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-bottom a {
+  font-size: 14px;
+  font-family: 'Roboto';
+  color: #1f2026;
+}
+
+.main p {
+  font-size: 11px;
+  font-family: 'Roboto';
+  color: #7e818c;
+}
