@@ -34,7 +34,7 @@ function MainLayout({ children }) {
           </div>
           <div className="header-buttons">
             <img src={user} alt="user" width={32} />
-            <NavLink to='/register'>Kirish</NavLink>
+            <NavLink to='/'>Kirish</NavLink>
             <div className="like">
               <img src={like} alt="like" width={33} />
               <NavLink to='/'>Saralangan</NavLink>
