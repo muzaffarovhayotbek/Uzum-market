@@ -48,7 +48,7 @@ function MainLayout({ children }) {
       </header>
       <main>{children}</main>
 
-      <footer className='footer'>
+      {/* <footer className='footer'>
         <div className="container footer__container">
           <div className="footer-you">
             <h2>haqimizda</h2>
@@ -99,7 +99,7 @@ function MainLayout({ children }) {
 
           </div>
         </div>
-      </footer>
+      </footer> */}
     </div>
   )
 }
