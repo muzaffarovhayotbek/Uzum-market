@@ -1,13 +1,20 @@
 .homePage {
   margin-top: 48px;
   margin-bottom: 32px;
+  position: relative;
 }
 
 .homePage h2 {
+  padding-top: 10px;
+  padding-bottom: 10px;
   font-size: 28px;
   font-weight: 500;
+  font-family: 'Inter';
 }
 
-li {
-  /* list-style: none; */
+button {
+  padding: 1px 4px;
+  background-color: #ffff00;
+  font-size: 12px;
+  font-family: 'Inter';
 }

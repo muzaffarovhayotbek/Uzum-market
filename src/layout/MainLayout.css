@@ -26,11 +26,6 @@
   font-family: 500;
 }
 
-.header-logo a {
-  font-size: 28px;
-  color: #1f2026;
-}
-
 .catalog {
   display: flex;
   align-items: center;
@@ -55,6 +50,8 @@
   padding-right: 187px;
   border-radius: 4px;
   border: none;
+  font-size: 16px;
+  font-family: 'Inter';
 }
 
 .slot {
@@ -179,5 +176,4 @@
   font-size: 11px;
   font-family: 'Roboto';
   color: #7e818c;
-  margin: 0 0 518px;
 }

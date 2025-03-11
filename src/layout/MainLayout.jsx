@@ -20,35 +20,35 @@ function MainLayout({ children }) {
         <div className="container header__container">
           <div className="header-logo">
             <img src={logo} alt="logo" width={31} />
-            <NavLink to='/'>It uzum</NavLink>
+            <NavLink to='/'>Uzum Market</NavLink>
           </div>
           <div className="header-search">
             <div className="catalog">
               <img src={headerIcon} alt="" width={32} height={24} />
-              <h2>Katalog</h2>
+              <NavLink to='/'>Katalog</NavLink>
             </div>
             <div className="form">
-              <input type="text" placeholder='Mahsulotlar va turkumlar izlash' />
+              <input type="text" placeholder='Qidirish' />
               <img className='slot' src={divSlot} alt="slot" width={46} />
             </div>
           </div>
           <div className="header-buttons">
             <img src={user} alt="user" width={32} />
-            <NavLink to='/'>Kirish</NavLink>
+            <NavLink to='/'>sign in</NavLink>
             <div className="like">
               <img src={like} alt="like" width={33} />
-              <NavLink to='/'>Saralangan</NavLink>
+              <NavLink to='/'>like</NavLink>
             </div>
             <div className="savat">
               <img src={savat} alt="savat" width={24} />
-              <NavLink to='/'>Savat</NavLink>
+              <NavLink to='/'>cart</NavLink>
             </div>
           </div>
         </div>
       </header>
       <main>{children}</main>
 
-      {/* <footer className='footer'>
+      <footer className='footer'>
         <div className="container footer__container">
           <div className="footer-you">
             <h2>haqimizda</h2>
@@ -99,7 +99,7 @@ function MainLayout({ children }) {
 
           </div>
         </div>
-      </footer> */}
+      </footer>
     </div>
   )
 }
