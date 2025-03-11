@@ -1,0 +1,96 @@
+.header {
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+
+.header a {
+  font-size: 12px;
+  font-family: 'Inter';
+  color: #1F2026;
+}
+
+.prices {
+  border-radius: 12px;
+  background-color: white;
+  padding: 24px 20px;
+  cursor: pointer;
+}
+
+.month {
+  background-color: #F0F2F5;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.price-twen {
+  padding: 6px 8px;
+  background-color: #ffffff;
+  font-size: 16px;
+  color: black;
+  font-family: 'Roboto';
+  width: 72px;
+  border-radius: 12px;
+}
+
+
+
+.price-twenty {
+  width: 70px;
+  padding: 6px 8px;
+  font-size: 12px;
+  font-family: 'Inter';
+  color: black;
+
+}
+
+.price-sixMonth {
+  font-size: 12px;
+  font-family: 'Inter';
+  width: 65px;
+  padding: 8px 6px;
+  color: black;
+}
+
+.price-three {
+  font-size: 12px;
+  font-family: 'Inter';
+  color: black;
+  padding: 6px 8px;
+  width: 65px;
+}
+
+.xarid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.xarid button {
+  padding: 14px;
+  background-color: #E6E8ED;
+  margin-top: 16px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-family: 'Inter';
+  color: #1F2026;
+  cursor: pointer;
+}
+
+.xarid button img {
+  background-color: #E6E8ED;
+}
+
+.cart {
+  width: 300px;
+  margin-top: 18px;
+  padding: 18px;
+  background-color: #7000FF;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: 'Inter';
+  border-radius: 12px;
+  color: white;
+}
