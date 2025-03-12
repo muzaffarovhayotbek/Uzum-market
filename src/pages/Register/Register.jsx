@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
 
 function Register() {
   const [formData, setFormData] = useState({
@@ -7,11 +6,11 @@ function Register() {
     email: "",
     password: "",
   });
-  const navigate = useNavigate()
-  function handleSave() {
-    navigate('/')
+  const navigate = useNavigate
+function handleSave(){
+  naviga
 
-  }
+}
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };

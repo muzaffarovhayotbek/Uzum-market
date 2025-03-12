@@ -8,7 +8,6 @@ import instagram from '../assets/instagram.svg'
 import telegram from '../assets/telegram.svg'
 import facebook from '../assets/facebook.svg'
 import YouTubde from '../assets/YouTube.svg'
-import logo from '../assets/big-logo.webp'
 import './MainLayout.css'
 import { NavLink } from 'react-router-dom';
 import Header from '../components/Header';
@@ -17,13 +16,15 @@ function MainLayout({ children }) {
   return (
     <div>
       <Header />
-      <header className='header'>
-        <div className="container header__container">
-          <div className="header-logo">
-            <img src={uzum} alt="uzum" />
+      <header className='container mx-auto'>
+        <div className="flex items-center justify-between">
+          <div className="flex items-center gap-6">
+            <NavLink to='/'>
+              <img src={uzum} alt="" />
+            </NavLink>
           </div>
           <div className="header-search">
-            <div className="catalog">
+            <div className="flex items-center gap-2 p-[12px] bg-[#E5E5FF] text-[14px] catalog ">
               <img src={headerIcon} alt="" width={32} height={24} />
               <NavLink to='/'>Katalog</NavLink>
             </div>
@@ -48,23 +49,23 @@ function MainLayout({ children }) {
       </header>
       <main>{children}</main>
 
-      <footer className='footer'>
-        <div className="container footer__container">
-          <div className="footer-you">
+      <footer className='container mx-auto'>
+        <div className="flex gap-[222px]">
+          <div className="flex flex-col gap-[10px]">
             <h2>haqimizda</h2>
-            <ul className='footer-list'>
+            <ul className='flex flex-col gap-[16px] text-[12px] text-[#8b8e99]'>
               <li>Topshirish punktlari</li>
               <li>Vakansiyalar</li>
             </ul>
           </div>
-          <div className="footer-main">
+          <div className="flex flex-col gap-[16px]">
             <h2>Foydalanuvchilarga</h2>
             <ul className='footer-list'>
               <li>Biz bilan bogʻlanish</li>
               <li>Savol-Javob</li>
             </ul>
           </div>
-          <div className="footer-tab">
+          <div className="flex flex-col gap-[16px]">
             <h2>Tadbirkorlarga</h2>
             <ul className='footer-list'>
               <li>Uzumda soting</li>
@@ -72,13 +73,13 @@ function MainLayout({ children }) {
             </ul>
           </div>
           <div className="footer-app">
-            <h2>Ilovani yuklab olish</h2>
+            <h2 className='text-[14px] text-[#1f2026]'>Ilovani yuklab olish</h2>
             <h2></h2>
             <div className="footer-smm">
               <h2>Uzum ijtimoiy tarmoqlarda</h2>
-              <div className="icons">
+              <div className="flex items-center gap-[12px] pb-[2px]">
                 <a href="https://t.me/uzum_market">
-                  <img src={instagram} alt="instagram" />
+                  <img className='w-[32px] h-[32px] cursor-pointer' src={instagram} alt="instagram" />
                 </a>
                 <a href="https://t.me/uzum_market">
                   <img src={telegram} alt="telegram" /></a>
@@ -92,10 +93,10 @@ function MainLayout({ children }) {
             </div>
           </div>
         </div>
-        <div className="footer-bottom container">
-          <a href="/">Maxfiylik kelishuvi</a>
+        <div className="container mx-auto flex items-center justify-between">
+          <a className='text-[14px] text-[#1f2026]' href="/">Maxfiylik kelishuvi</a>
           <div className="main">
-            <p>«2024© XK MCHJ «UZUM MARKET». STIR 309376127. Barcha huquqlar himoyalangan»</p>
+            <p className='text-[11px] text-[#7e818c]'>«2024© XK MCHJ «UZUM MARKET». STIR 309376127. Barcha huquqlar himoyalangan»</p>
 
           </div>
         </div>
