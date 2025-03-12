@@ -12,6 +12,7 @@ import logo from '../assets/big-logo.webp'
 import './MainLayout.css'
 import { NavLink } from 'react-router-dom';
 import Header from '../components/Header';
+import uzum from '../assets/uzum.png'
 function MainLayout({ children }) {
   return (
     <div>
@@ -19,8 +20,7 @@ function MainLayout({ children }) {
       <header className='header'>
         <div className="container header__container">
           <div className="header-logo">
-            <img src={logo} alt="logo" width={31} />
-            <NavLink to='/'>Uzum Market</NavLink>
+            <img src={uzum} alt="uzum" />
           </div>
           <div className="header-search">
             <div className="catalog">
@@ -34,14 +34,14 @@ function MainLayout({ children }) {
           </div>
           <div className="header-buttons">
             <img src={user} alt="user" width={32} />
-            <NavLink to='/'>sign in</NavLink>
+            <NavLink to='/register'>sign in</NavLink>
             <div className="like">
               <img src={like} alt="like" width={33} />
-              <NavLink to='/'>like</NavLink>
+              <NavLink to='/like'>like</NavLink>
             </div>
             <div className="savat">
               <img src={savat} alt="savat" width={24} />
-              <NavLink to='/'>cart</NavLink>
+              <NavLink to='/cart'>cart</NavLink>
             </div>
           </div>
         </div>

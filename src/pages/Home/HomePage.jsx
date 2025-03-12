@@ -10,6 +10,9 @@ function HomePage() {
   const handleRedirect = (id) => {
     navigate(`/products/${id}`);
   };
+  const calculateDiscountPrice = (price, discountPercentage) => {
+    return (price - (price * discountPercentage) / 100).toFixed(2);
+  };
 
   return (
     <div className="homePage">
@@ -49,14 +52,16 @@ function HomePage() {
                     <p className="text-[14px] text-[#1f2026] line-through font-semibold mt-2">
                       {product.price} som
                     </p>
-                    <p className="text-sm text-gray-800 rounded-2xl px-2 bg-[#7F4DFF] rounded-md text-white font-semibold">
+                    <p className="text-sm text-gray-800 rounded-2xl px-2  bg-[#7F4DFF] rounded-md text-white font-semibold ">
+                      {calculateDiscountPrice(product.price, 10)}som{" "}
+                      <span className="text-sm">(-10%)</span>
                     </p>
                   </div>
                 </div>
               );
             })}
         </div>
-        
+
       </div>
     </div>
   );
