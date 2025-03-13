@@ -3,13 +3,30 @@ import { NavLink, useParams } from "react-router-dom";
 import db from "../../assets/db.json";
 import './Products.css';
 import heart from '../../assets/heart.png';
+import { useDispatch, useSelector } from "react-redux";
+import { addToCart } from "../../store/cartSlice";
+import toast from "react-hot-toast";
 
 function Products() {
+  const { products } = useSelector((state) => state.cart);
+  const [quantity, setQuantity] = useState(1);
+
+  const dispatch = useDispatch();
+
   const [product, setProduct] = useState(null);
   const { id } = useParams();
 
-  useEffect(() => {
+  const handleProducts = () => {
+    const cardAdd = { ...product, quantity };
+    dispatch(addToCart(cardAdd));
+    toast.success('Mahsulot savatga qo\'shildi');
+  };
 
+  const handleQuantityChange = (e) => {
+    setQuantity(e.target.value);
+  };
+
+  useEffect(() => {
     const foundProduct = db.products.find((item) => item.id === Number(id));
     if (foundProduct) {
       setProduct(foundProduct);
@@ -29,9 +46,6 @@ function Products() {
 
   return (
     <div className="container mx-auto py-24 flex gap-10">
-      <header className="header">
-        <NavLink to="/">Bosh sahifa</NavLink>
-      </header>
       <div className="product-info">
         <img
           className="object-cover"
@@ -40,11 +54,11 @@ function Products() {
           src={product.thumbnail}
           alt={product.title}
         />
-        <div className="details">
+        <div>
+          <h2>{product.id}</h2>
           <h3 className="text-2xl font-bold">{product.title}</h3>
-          <h3 className="text-xl text-gray-600">{product.company}</h3>
           <h4 className="text-lg">${product.price}</h4>
-          <p>{product.description}</p>
+          <p className="text-[20px]">{product.description}</p>
         </div>
       </div>
       <div className="prices">
@@ -59,7 +73,18 @@ function Products() {
           <button>1 kunga harid qilish</button>
           <button><img src={heart} alt="heart" width={24} /></button>
         </div>
-        <button className="cart">Savatga qo'shish</button>
+        <div className="quantity">
+          <label htmlFor="quantity">Miqdor:</label>
+          <input
+            id="quantity"
+            type="number"
+            value={quantity}
+            onChange={handleQuantityChange}
+            min="1"
+            className="w-16 text-center"
+          />
+        </div>
+        <button className="cart" onClick={handleProducts}>Savatga qo'shish</button>
       </div>
     </div>
   );

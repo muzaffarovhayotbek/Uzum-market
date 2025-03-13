@@ -1,12 +1,5 @@
-.header {
-  margin-top: 10px;
-  margin-bottom: 25px;
-}
-
 .header a {
-  font-size: 12px;
   font-family: 'Inter';
-  color: #1F2026;
 }
 
 .prices {

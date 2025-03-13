@@ -9,7 +9,7 @@ import telegram from '../assets/telegram.svg'
 import facebook from '../assets/facebook.svg'
 import YouTubde from '../assets/YouTube.svg'
 import './MainLayout.css'
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import Header from '../components/Header';
 import uzum from '../assets/uzum.png'
 function MainLayout({ children }) {
@@ -35,7 +35,7 @@ function MainLayout({ children }) {
           </div>
           <div className="header-buttons">
             <img src={user} alt="user" width={32} />
-            <NavLink to='/register'>sign in</NavLink>
+            <Link to='/register'>sign in</Link>
             <div className="like">
               <img src={like} alt="like" width={33} />
               <NavLink to='/like'>like</NavLink>

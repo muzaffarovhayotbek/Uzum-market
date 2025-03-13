@@ -1,6 +1,7 @@
 @import url('./fonts.css');
-@import "tailwindcss";
+@import 'tailwindcss';
 
+/* 
 *,
 *::after,
 *::before {
@@ -45,4 +46,4 @@ body {
   margin-right: auto;
   padding-left: 5rem;
   padding-right: 5rem;
-}
+} */
