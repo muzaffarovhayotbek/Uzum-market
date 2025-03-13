@@ -1,13 +1,10 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
-
+import { removeCart } from "../../store/cartSlice";
 function Cart() {
   const { products } = useSelector((state) => state.cart);
   const dispatch = useDispatch();
 
-  const handleRemove = (id) => {
-    dispatch(removeFromCart(id));
-  };
 
   return (
     <div className="container mx-auto py-24">
@@ -24,9 +21,9 @@ function Cart() {
                 <p className="text-gray-600">Narx: ${product.price}</p>
                 <p>Miqdor: {product.quantity}</p>
               </div>
-              <button 
+              <button
                 className="bg-red-500 text-white px-4 py-2 rounded"
-                onClick={() => handleRemove(product.id)}
+                onClick={() => dispatch(removeCart(product.id))}
               >
                 O‘chirish
               </button>

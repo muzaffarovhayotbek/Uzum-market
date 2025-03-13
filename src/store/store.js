@@ -4,6 +4,7 @@ import counterReducer from './counterSlice'
 export const store = configureStore({
   reducer: {
     cart: CartAdd,
-    counter: counterReducer
+    counter: counterReducer,
+    
   }
 })
