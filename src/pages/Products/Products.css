@@ -55,20 +55,11 @@
   width: 65px;
 }
 
-.xarid {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
 
 .xarid button {
   padding: 14px;
-  background-color: #E6E8ED;
-  margin-top: 16px;
   border-radius: 12px;
-  font-size: 16px;
   font-family: 'Inter';
-  color: #1F2026;
   cursor: pointer;
 }
 
@@ -77,13 +68,7 @@
 }
 
 .cart {
-  width: 300px;
-  margin-top: 18px;
   padding: 18px;
-  background-color: #7000FF;
-  cursor: pointer;
-  font-size: 16px;
   font-family: 'Inter';
   border-radius: 12px;
-  color: white;
 }

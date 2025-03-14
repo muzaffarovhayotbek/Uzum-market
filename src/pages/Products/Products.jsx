@@ -67,6 +67,7 @@ function Products() {
           <h2>{product.id}</h2>
           <h3 className="text-2xl font-bold">{product.title}</h3>
           <h4 className="text-lg">${product.price}</h4>
+          <p className="text-yellow-400">⭐{product.rating} / 5</p>
         </div>
       </div>
       <div className="prices">
@@ -77,18 +78,20 @@ function Products() {
           <h2 className="price-sixMonth">6 oy</h2>
           <h2 className="price-three">3 oy</h2>
         </div>
-        <div className="xarid">
-          <button>1 kunga harid qilish</button>
+        <div className=" xarid flex items-center justify-between">
+          <button className="bg-[#E6E8ED] mt-[16px] text-[12px] text-[#1F]">1 kunga harid qilish</button>
           <button><img src={heart} alt="heart" width={24} /></button>
         </div>
         <div className="quantity">
-          <label htmlFor="quantity">Miqdor:</label>
-          <h3>{counter.value}</h3>
-          <button id="quantity" value={quantity} onChange={handleQuantityChange} onClick={handleIncrement}>+</button>
-          <button onClick={handleDecrement}>-</button>
+          <label htmlFor="quantity" className="text-2xl mt-4 text-amber-800 font-bold">Miqdor:</label>
+          <h3 className="text-[18px] pt-2 pb-3">{counter.value}</h3>
+          <div className="flex gap-20">
+            <button id="quantity" value={quantity} onChange={handleQuantityChange} onClick={handleIncrement} className="cursor-pointer bg-gray-500 rounded-md pt-2">+</button>
+            <button className="bg-red-500 cursor-pointer rounded-2xl" onClick={handleDecrement}>-</button>
+          </div>
 
         </div>
-        <button className="cart" onClick={handleProducts}>Savatga qo'shish</button>
+        <button className=" cart w-[300px] mt-[18px] p-[18px] bg-[#7000FF] cursor-pointer text-[16px] text-white " onClick={handleProducts}>Savatga qo'shish</button>
       </div>
     </div>
   );
