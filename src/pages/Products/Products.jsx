@@ -6,8 +6,10 @@ import heart from '../../assets/heart.png';
 import { useDispatch, useSelector } from "react-redux";
 import { addToCart } from "../../store/cartSlice";
 import toast from "react-hot-toast";
+import { decrement, increment } from "../../store/counterSlice";
 
 function Products() {
+  const counter = useSelector(state => state.counter)
   const { products } = useSelector((state) => state.cart);
   const [quantity, setQuantity] = useState(1);
 
@@ -17,7 +19,7 @@ function Products() {
   const { id } = useParams();
 
   const handleProducts = () => {
-    const cardAdd = { ...product, quantity };
+    const cardAdd = { ...product, quantity: counter.value };
     dispatch(addToCart(cardAdd));
     toast.success('Mahsulot savatga qo\'shildi');
   };
@@ -25,6 +27,13 @@ function Products() {
   const handleQuantityChange = (e) => {
     setQuantity(e.target.value);
   };
+
+  function handleIncrement() {
+    dispatch(increment())
+  }
+  function handleDecrement() {
+    dispatch(decrement())
+  }
 
   useEffect(() => {
     const foundProduct = db.products.find((item) => item.id === Number(id));
@@ -58,7 +67,6 @@ function Products() {
           <h2>{product.id}</h2>
           <h3 className="text-2xl font-bold">{product.title}</h3>
           <h4 className="text-lg">${product.price}</h4>
-          <p className="text-[20px]">{product.description}</p>
         </div>
       </div>
       <div className="prices">
@@ -75,14 +83,10 @@ function Products() {
         </div>
         <div className="quantity">
           <label htmlFor="quantity">Miqdor:</label>
-          <input
-            id="quantity"
-            type="number"
-            value={quantity}
-            onChange={handleQuantityChange}
-            min="1"
-            className="w-16 text-center"
-          />
+          <h3>{counter.value}</h3>
+          <button id="quantity" value={quantity} onChange={handleQuantityChange} onClick={handleIncrement}>+</button>
+          <button onClick={handleDecrement}>-</button>
+
         </div>
         <button className="cart" onClick={handleProducts}>Savatga qo'shish</button>
       </div>
