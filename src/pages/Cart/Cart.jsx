@@ -11,7 +11,6 @@ function Cart() {
   const navigate = useNavigate()
   const handleBy = () => {
     dispatch(addToOrders(products))
-    navigate('/buyurtma')
     toast.success('Buyurtma qoshildi')
   }
   function handleDelete(id) {

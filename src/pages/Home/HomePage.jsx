@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './HomePage.css';
 import db from '../../assets/db.json';
@@ -22,12 +22,12 @@ function HomePage() {
 
         <h2 className="text-[28px] pt-5 pb-5 text-center">Mahsulotlar</h2>
 
-        <div className="flex flex-wrap justify-center gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
           {db.products.map((product) => {
             return (
               <div
                 key={product.id}
-                className="bg-gray-100 shadow-md rounded-xl overflow-hidden relative w-[240px]"
+                className="bg-gray-100 shadow-md rounded-xl overflow-hidden relative w-full"
               >
                 <img
                   src={product.thumbnail}

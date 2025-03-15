@@ -21,7 +21,7 @@ function Products() {
   const handleProducts = () => {
     const cardAdd = { ...product, quantity: counter.value };
     dispatch(addToCart(cardAdd));
-    toast.success(` mahsulot savatga qoshildi`);
+    toast.success(`${counter.value}  dona ${product.title}  savatga qo'shildi`);
   };
 
   const handleQuantityChange = (e) => {
