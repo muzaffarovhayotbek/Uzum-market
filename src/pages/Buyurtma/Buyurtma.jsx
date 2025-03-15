@@ -24,12 +24,13 @@ function Buyurtma() {
               className="cart-item border p-4 flex justify-between items-center"
             >
               <img
-                src={product.thumbnail}
+                src={product.images}
                 alt={product.title}
                 width={100}
                 className="object-cover"
               />
               <div className="flex-1 px-4">
+                <h2>{product.id}</h2>
                 <h3 className="text-lg font-bold">{product.title}</h3>
                 <p className="text-gray-600">Narx: ${product.price}</p>
                 <p>Miqdor: {product.quantity}</p>
