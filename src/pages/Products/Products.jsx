@@ -108,7 +108,6 @@ function Products() {
             </button>
             <button
               className=" cart-btn bg-red-500 cursor-pointer rounded-2xl"
-              onClick={handleDecrement}
             >
               -
             </button>
