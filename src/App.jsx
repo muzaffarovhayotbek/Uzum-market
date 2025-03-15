@@ -6,19 +6,22 @@ import Products from './pages/Products/Products';
 import Cart from './pages/Cart/Cart';
 import Like from './pages/Like/Like';
 import ErrorPage from './pages/Error/ErrorPage';
+import Buyurtma from './pages/buyurtma/buyurtma';
+import { Toaster } from 'react-hot-toast';
 
 function App() {
   return (
     <div>
+      <Toaster position="top-right" reverseOrder={false} />
       <Routes>
         <Route
           index
           element={
             <MainLayout>
-              <HomePage></HomePage>
+              <HomePage />
             </MainLayout>
           }
-        ></Route>
+        />
         <Route
           path="/products/:id"
           element={
@@ -26,7 +29,7 @@ function App() {
               <Products />
             </MainLayout>
           }
-        ></Route>
+        />
         <Route
           path="/cart"
           element={
@@ -34,7 +37,15 @@ function App() {
               <Cart />
             </MainLayout>
           }
-        ></Route>
+        />
+        <Route
+          path="/buyurtma"
+          element={
+            <MainLayout>
+              <Buyurtma />
+            </MainLayout>
+          }
+        />
         <Route
           path="/like"
           element={
@@ -42,8 +53,8 @@ function App() {
               <Like />
             </MainLayout>
           }
-        ></Route>
-        <Route path='*' element={<ErrorPage />}></Route>
+        />
+        <Route path="*" element={<ErrorPage />} />
       </Routes>
     </div>
   );

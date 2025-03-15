@@ -22,17 +22,17 @@ function HomePage() {
 
         <h2 className="text-2xl font-bold mb-6 text-center">Mahsulotlar</h2>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+        <div className="flex flex-wrap justify-center gap-4">
           {db.products.map((product) => {
             return (
               <div
                 key={product.id}
-                className="bg-gray-100 shadow-md rounded-xl overflow-hidden relative"
+                className="bg-gray-100 shadow-md rounded-xl overflow-hidden relative w-[240px]"
               >
                 <img
                   src={product.thumbnail}
                   alt={product.title}
-                  className="w-[239.75px] h-[319.66px] rounded-xl h-48 object-cover"
+                  className="w-full h-[320px] rounded-xl object-cover"
                 />
 
                 <div
@@ -51,9 +51,10 @@ function HomePage() {
                   </button>
 
                   <p className="text-[14px] text-[#1f2026] line-through font-semibold mt-2">
+                    <p className="text-yellow-400">⭐{product.rating} / 5</p>
                     {product.price} som
                   </p>
-                  <p className="text-sm text-gray-800 rounded-2xl px-2  bg-[#7F4DFF] rounded-md text-white font-semibold ">
+                  <p className="text-sm px-2 bg-[#7F4DFF] rounded-md text-white font-semibold">
                     {calculateDiscountPrice(product.price, 10)}som{' '}
                     <span className="text-sm">(-10%)</span>
                   </p>
@@ -61,9 +62,7 @@ function HomePage() {
               </div>
             );
           })}
-
         </div>
-
       </div>
     </div>
   );

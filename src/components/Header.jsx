@@ -17,7 +17,7 @@ function Header() {
             <a className="text-[#4D4F59] text-[14px] font-[400]" href="/">
               Savol javob
             </a>
-            <span className="text-[#4D4F59] text-[14px] font-[400]">Buyurtmalarim</span>
+            <NavLink to='/buyurtma' className="text-[#4D4F59] text-[14px] font-[400]">Buyurtmalarim</NavLink>
           </div>
         </div>
       </header>
