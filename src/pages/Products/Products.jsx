@@ -31,9 +31,7 @@ function Products() {
   function handleIncrement() {
     dispatch(increment());
   }
-  function handleDecrement() {
-    dispatch(decrement());
-  }
+
 
   useEffect(() => {
     const foundProduct = db.products.find((item) => item.id === Number(id));
