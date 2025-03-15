@@ -15,12 +15,12 @@ function HomePage() {
   };
 
   return (
-    <div className="homePage">
+    <div className="mt-[48px] mb-[32px]">
       <Carousel products={db.products} />
       <div className="container mx-auto p-4">
         <ul className="flex gap-4 overflow-x-auto whitespace-nowrap items-start mb-4 scrollbar-hide p-2"></ul>
 
-        <h2 className="text-2xl font-bold mb-6 text-center">Mahsulotlar</h2>
+        <h2 className="text-[28px] pt-5 pb-5 text-center">Mahsulotlar</h2>
 
         <div className="flex flex-wrap justify-center gap-4">
           {db.products.map((product) => {

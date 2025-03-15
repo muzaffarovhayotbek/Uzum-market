@@ -1,11 +1,10 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import location from '../assets/location.svg';
-import './Header.css';
 function Header() {
   return (
     <div>
-      <header className="components-header bg-[#F0F2F5]">
+      <header className="pt-[6px] pb-[8px] bg-[#F0F2F5]">
         <div className="container mx-auto flex items-center justify-between">
           <div className="flex items-center gap-[6px]">
             <img src={location} alt="location" width={24} height={24} />
