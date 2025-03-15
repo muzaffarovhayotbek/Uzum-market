@@ -6,8 +6,8 @@ import Products from './pages/Products/Products';
 import Cart from './pages/Cart/Cart';
 import Like from './pages/Like/Like';
 import ErrorPage from './pages/Error/ErrorPage';
-import Buyurtma from './pages/buyurtma/buyurtma';
 import { Toaster } from 'react-hot-toast';
+import Buyurtma from './pages/Buyurtma/Buyurtma';
 
 function App() {
   return (
@@ -38,14 +38,7 @@ function App() {
             </MainLayout>
           }
         />
-        <Route
-          path="/buyurtma"
-          element={
-            <MainLayout>
-              <Buyurtma />
-            </MainLayout>
-          }
-        />
+        <Route path='/buyurtma' element = {<MainLayout><Buyurtma/></MainLayout>}></Route>
         <Route
           path="/like"
           element={
