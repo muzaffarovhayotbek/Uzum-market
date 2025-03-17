@@ -3,7 +3,7 @@ import React from 'react'
 function Like() {
   return (
     <div className='container mx-auto'>
-      Like
+      <h2 className='text-center'>Likes</h2>
     </div>
   )
 }

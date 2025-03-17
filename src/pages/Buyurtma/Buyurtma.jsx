@@ -13,7 +13,7 @@ function Buyurtma() {
   }
   return (
     <div className="container mx-auto">
-      <h2 className="text-[28px]">Buyurtmalaringiz</h2>
+      <h2 className="text-[28px] text-center pb-2">Buyurtmalaringiz</h2>
       {orders.length === 0 ? (
         <p className="text-center text-[24px]">Buyurtma bo‘sh</p>
       ) : (

@@ -1,10 +1,11 @@
 @import url('./fonts.css');
 @import 'tailwindcss';
 
-.cart-btn{
+.cart-btn {
   padding: 8px 20px;
   font-size: 20px;
 }
+
 /* 
 *,
 *::after,

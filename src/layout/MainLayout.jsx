@@ -33,14 +33,14 @@ function MainLayout({ children }) {
               <img className='slot' src={divSlot} alt="slot" width={46} />
             </div>
           </div>
-          <div className="header-buttons">
+          <div className="flex  items-center gap-4">
             <img src={user} alt="user" width={32} />
             <Link to='/register'>sign in</Link>
             <div className="like">
               <img src={like} alt="like" width={33} />
               <NavLink to='/like'>like</NavLink>
             </div>
-            <div className="savat">
+            <div className="flex items-center gap-[8px]">
               <img src={savat} alt="savat" width={24} />
               <NavLink to='/cart'>cart</NavLink>
             </div>

@@ -30,7 +30,7 @@ function HomePage() {
                 className="bg-gray-100 shadow-md rounded-xl overflow-hidden relative w-full"
               >
                 <img
-                  src={product.thumbnail}
+                  src={product.images[0]}
                   alt={product.title}
                   className="w-full h-[320px] rounded-xl object-cover"
                 />
