@@ -46,7 +46,7 @@ function HomePage() {
                   <p className="text-gray-600 text-sm">
                     {product.description.slice(0, 70)}...
                   </p>
-                  <button className="bg-[#ffff00] text-[12px] p-1">
+                  <button className="bg-[#ffff00] text-[12px]">
                     0 so'm/oyiga
                   </button>
 
