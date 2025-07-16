@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-
+import React from 'react';
 const Carousel = () => {
   const slides = [
     'https://images.uzum.uz/cv3eg7ei4n36ls3t0770/main_page_banner.jpg',

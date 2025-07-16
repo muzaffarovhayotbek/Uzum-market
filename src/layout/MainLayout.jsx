@@ -35,7 +35,7 @@ function MainLayout({ children }) {
           </div>
           <div className="flex  items-center gap-4">
             <img src={user} alt="user" width={32} />
-            <Link to='/register'>sign in</Link>
+            <Link to='/Register'>sign in</Link>
             <div className="like">
               <img src={like} alt="like" width={33} />
               <NavLink to='/like'>like</NavLink>
@@ -47,7 +47,7 @@ function MainLayout({ children }) {
           </div>
         </div>
       </header>
-      <main>{children}</main>
+      <main className='flex-grow'>{children}</main>
 
       <footer className='container mx-auto'>
         <div className="flex gap-[222px]">
@@ -87,7 +87,7 @@ function MainLayout({ children }) {
                   <img src={YouTubde} alt="you tube" />
                 </a>
                 <a href="https://t.me/uzum_market">
-                  <img src={facebook} alt="" />
+                  <img src={facebook} alt="facebook" />
                 </a>
               </div>
             </div>
@@ -104,5 +104,4 @@ function MainLayout({ children }) {
     </div>
   )
 }
-
 export default MainLayout
