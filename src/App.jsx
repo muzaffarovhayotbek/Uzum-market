@@ -8,6 +8,8 @@ import Like from './pages/Like/Like';
 import ErrorPage from './pages/Error/ErrorPage';
 import { Toaster } from 'react-hot-toast';
 import Buyurtma from './pages/Buyurtma/Buyurtma';
+import Register from './pages/Register/Register';
+import Login from './pages/Login/Login';
 
 function App() {
   return (
@@ -38,7 +40,17 @@ function App() {
             </MainLayout>
           }
         />
-        <Route path='/buyurtma' element = {<MainLayout><Buyurtma/></MainLayout>}></Route>
+        <Route
+          path="/buyurtma"
+          element={
+            <MainLayout>
+              <Buyurtma />
+            </MainLayout>
+          }
+        ></Route>
+        <Route path="/register" element={<Register />}></Route>
+        <Route path="/login" element={<Login />}></Route>
+
         <Route
           path="/like"
           element={
