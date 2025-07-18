@@ -36,9 +36,11 @@ function Register() {
   }
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gradient-to-r from-purple-600 to-blue-600 p-6">
+    <div className="flex items-center justify-center min-h-screen bg-gradient-to-r from-purple-600 to-blue-600 p-6 overflow-auto">
+      
       <div className="w-full max-w-md p-6 rounded-lg shadow-lg bg-white text-black">
         <h2 className="text-center text-2xl font-bold mb-4">
+          <h2 className=''></h2>
           Create your account
         </h2>
 

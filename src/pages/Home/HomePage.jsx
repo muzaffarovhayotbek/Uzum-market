@@ -40,13 +40,13 @@ function HomePage() {
                   className="p-4 flex flex-col justify-start gap-2 items-start bg-gray-200 cursor-pointer h-full"
                 >
                   <p>{product.id}</p>
-                  <p className="text-center text-[12.8px] text-[#1f2026]">
+                  <p className="text-center text-[12.8px] text-[#1f2026] ">
                     {product.title}
                   </p>
                   <p className="text-gray-600 text-sm">
                     {product.description.slice(0, 70)}...
                   </p>
-                  <button className="bg-[#ffff00] text-[12px]">
+                  <button className="bg-[#ffff00] text-[12px]  container mx-auto border mx-auto">
                     0 so'm/oyiga
                   </button>
 
